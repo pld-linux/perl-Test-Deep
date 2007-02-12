@@ -6,7 +6,7 @@
 %define	pdir	Test
 %define	pnam	Deep
 Summary:	Test::Deep - Extremely flexible deep comparison
-Summary(pl):	Test::Deep - bardzo elastyczne g³êbokie porównania
+Summary(pl.UTF-8):   Test::Deep - bardzo elastyczne gÅ‚Ä™bokie porÃ³wnania
 Name:		perl-Test-Deep
 Version:	0.092
 Release:	1
@@ -41,21 +41,21 @@ know some things about how it should look, eq is no good and you must
 use pattern matching instead. Test::Deep provides pattern matching for
 complex data structures.
 
-%description -l pl
-Test::Deep udostêpnia bardzo elastyczne sposoby sprawdzania, czy
-otrzymany wynik jest tym, który by³ oczekiwany. W najprostszym
-przypadku porównuje dwie struktury przechodz±c po ka¿dym poziomie,
-sprawdzaj±c czy warto¶ci siê zgadzaj±, czy tablice i hasze maj± te
-same elementy i czy referencje s± pob³ogos³awione do w³a¶ciwych klas.
-Obs³uguje tak¿e zapêtlone struktury danych bez wpadania w nieskoñczon±
-pêtlê.
+%description -l pl.UTF-8
+Test::Deep udostÄ™pnia bardzo elastyczne sposoby sprawdzania, czy
+otrzymany wynik jest tym, ktÃ³ry byÅ‚ oczekiwany. W najprostszym
+przypadku porÃ³wnuje dwie struktury przechodzÄ…c po kaÅ¼dym poziomie,
+sprawdzajÄ…c czy wartoÅ›ci siÄ™ zgadzajÄ…, czy tablice i hasze majÄ… te
+same elementy i czy referencje sÄ… pobÅ‚ogosÅ‚awione do wÅ‚aÅ›ciwych klas.
+ObsÅ‚uguje takÅ¼e zapÄ™tlone struktury danych bez wpadania w nieskoÅ„czonÄ…
+pÄ™tlÄ™.
 
-Bardziej interesuj±ce jest to, ¿e pozwala na robienie czego¶ wiêcej
-ni¿ proste przyrównania. Dla ³añcuchów znaków operator eq sprawdza,
-czy 2 ³añcuchy s± dok³adnie takie same, ale czasem nie jest to tym,
-co chcemy. Je¶li nie wiemy dok³adnie, jaki powinien byæ ³añcuch, ale
-wiemy co¶ o tym, jak powinien wygl±daæ - Test::Deep pozwala na
-dopasowywanie wzorców dla z³o¿onych struktur danych.
+Bardziej interesujÄ…ce jest to, Å¼e pozwala na robienie czegoÅ› wiÄ™cej
+niÅ¼ proste przyrÃ³wnania. Dla Å‚aÅ„cuchÃ³w znakÃ³w operator eq sprawdza,
+czy 2 Å‚aÅ„cuchy sÄ… dokÅ‚adnie takie same, ale czasem nie jest to tym,
+co chcemy. JeÅ›li nie wiemy dokÅ‚adnie, jaki powinien byÄ‡ Å‚aÅ„cuch, ale
+wiemy coÅ› o tym, jak powinien wyglÄ…daÄ‡ - Test::Deep pozwala na
+dopasowywanie wzorcÃ³w dla zÅ‚oÅ¼onych struktur danych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
