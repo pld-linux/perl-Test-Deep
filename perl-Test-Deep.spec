@@ -6,7 +6,7 @@
 %define	pdir	Test
 %define	pnam	Deep
 Summary:	Test::Deep - Extremely flexible deep comparison
-Summary(pl.UTF-8):   Test::Deep - bardzo elastyczne głębokie porównania
+Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
 Version:	0.092
 Release:	1
