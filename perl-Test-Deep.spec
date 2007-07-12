@@ -8,13 +8,13 @@
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
-Version:	0.092
+Version:	0.096
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2b08c439013db230dc153cf52553fd7a
+# Source0-md5:	593cbc52d0170df46979e88645977bd5
 URL:		http://search.cpan.org/dist/Test-Deep/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
