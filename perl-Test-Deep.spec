@@ -8,13 +8,13 @@
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
-Version:	0.103
+Version:	0.106
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	2fc92524553a3077475ea9589f02d4ee
+# Source0-md5:	8cf0066dca9c3c102e4ae8f57173d12f
 URL:		http://search.cpan.org/dist/Test-Deep/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -52,8 +52,8 @@ pętlę.
 
 Bardziej interesujące jest to, że pozwala na robienie czegoś więcej
 niż proste przyrównania. Dla łańcuchów znaków operator eq sprawdza,
-czy 2 łańcuchy są dokładnie takie same, ale czasem nie jest to tym,
-co chcemy. Jeśli nie wiemy dokładnie, jaki powinien być łańcuch, ale
+czy 2 łańcuchy są dokładnie takie same, ale czasem nie jest to tym, co
+chcemy. Jeśli nie wiemy dokładnie, jaki powinien być łańcuch, ale
 wiemy coś o tym, jak powinien wyglądać - Test::Deep pozwala na
 dopasowywanie wzorców dla złożonych struktur danych.
 
