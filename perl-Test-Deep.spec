@@ -1,15 +1,15 @@
 #
 # Conditional build:
 %bcond_without	tests		# do not perform "make test"
-#
+
+%define		pdir	Test
+%define		pnam	Deep
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Test
-%define	pnam	Deep
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
 Version:	0.106
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -69,9 +69,10 @@ dopasowywanie wzorców dla złożonych struktur danych.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
+
+rm $RPM_BUILD_ROOT%{perl_vendorlib}/Test/Deep.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
