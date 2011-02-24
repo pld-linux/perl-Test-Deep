@@ -8,13 +8,13 @@
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
-Version:	0.106
-Release:	2
+Version:	0.108
+Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	8cf0066dca9c3c102e4ae8f57173d12f
+Source0:	http://www.cpan.org/modules/by-module/Test/RJBS/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	df17efafc31acb927cc1d950115f4178
 URL:		http://search.cpan.org/dist/Test-Deep/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -72,7 +72,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-rm $RPM_BUILD_ROOT%{perl_vendorlib}/Test/Deep.pod
+%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Test/Deep.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -80,6 +80,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README TODO
-%{perl_vendorlib}/Test/*.pm
+%{perl_vendorlib}/Test/Deep.pm
 %{perl_vendorlib}/Test/Deep
-%{_mandir}/man3/*
+%{_mandir}/man3/Test::Deep*.3pm*
