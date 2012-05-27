@@ -8,17 +8,18 @@
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
-Version:	0.108
+Version:	0.109
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Test/RJBS/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	df17efafc31acb927cc1d950115f4178
+Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	9a864e38f716860fe8acdb4a60154b0c
 URL:		http://search.cpan.org/dist/Test-Deep/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
+BuildRequires:	perl-Scalar-List-Utils >= 1.09
 BuildRequires:	perl-Test-NoWarnings >= 0.02
 BuildRequires:	perl-Test-Tester >= 0.04
 %endif
@@ -71,8 +72,6 @@ dopasowywanie wzorców dla złożonych struktur danych.
 rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-
-%{__rm} $RPM_BUILD_ROOT%{perl_vendorlib}/Test/Deep.pod
 
 %clean
 rm -rf $RPM_BUILD_ROOT
