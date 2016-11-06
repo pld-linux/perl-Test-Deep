@@ -9,7 +9,7 @@ Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
 Version:	1.124
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -21,7 +21,8 @@ BuildRequires:	rpm-perlprov >= 4.1-13
 %if %{with tests}
 BuildRequires:	perl-Scalar-List-Utils >= 1.09
 BuildRequires:	perl-Test-Simple >= 0.88
-BuildRequires:	perl-Test-Tester >= 0.107
+# _ is temporary workaround for perl decimal version comparison: perl 5.24 provides 0.28 (not 0.280)
+BuildRequires:	perl-Test-Tester >= 0.10_7
 %endif
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
