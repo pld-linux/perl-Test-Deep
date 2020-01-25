@@ -4,7 +4,6 @@
 
 %define		pdir	Test
 %define		pnam	Deep
-%include	/usr/lib/rpm/macros.perl
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
