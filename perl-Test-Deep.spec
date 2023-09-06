@@ -1,26 +1,27 @@
 #
 # Conditional build:
-%bcond_without	tests		# do not perform "make test"
+%bcond_without	tests	# unit tests
 
 %define		pdir	Test
 %define		pnam	Deep
 Summary:	Test::Deep - Extremely flexible deep comparison
 Summary(pl.UTF-8):	Test::Deep - bardzo elastyczne głębokie porównania
 Name:		perl-Test-Deep
-Version:	1.130
+Version:	1.204
 Release:	1
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	d466e471108f7f7a5df3802cb13761ac
-URL:		https://metacpan.org/release/Test-Deep
-BuildRequires:	perl-devel >= 1:5.8.0
+Source0:	https://www.cpan.org/modules/by-module/Test/%{pdir}-%{pnam}-%{version}.tar.gz
+# Source0-md5:	fcff296434cd92538ae9de9d1744705f
+URL:		https://metacpan.org/dist/Test-Deep
+BuildRequires:	perl-ExtUtils-MakeMaker >= 6.78
+BuildRequires:	perl-devel >= 1:5.12.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	rpmbuild(macros) >= 1.745
 %if %{with tests}
 BuildRequires:	perl-Scalar-List-Utils >= 1.09
-BuildRequires:	perl-Test-Simple >= 0.88
+BuildRequires:	perl-Test-Simple >= 0.96
 BuildRequires:	perl-Test-Tester >= 0.107
 %endif
 BuildArch:	noarch
